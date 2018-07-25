@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #241822;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+.container{
+    margin: 15% auto;
+    width: 80%;
+}
+#clock{
+    margin-top: 5%;
+}
+#clock span{
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding: 1em;
+    margin: 2% 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#clock span:nth-child(1){
+    background: #ec9e14;
+}
+#clock span:nth-child(2){
+    background: #bc4577;
+}
+#clock span:nth-child(3){
+    background: #2c806f;
+}
+#clock span:nth-child(4){
+    background: #00a2e4;
+}
+#clock-text span{
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(226, 201, 206);
+    margin: 0 5%;
+}
+#clock:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.turn{
+    animation: turn 1s ease forwards;    
+}
+
+@keyframes turn{
+    100% {transform: scale(1, 1)}
+    0% {transform: scale(1.2, 1.2);}
+  }
